@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app JS</title>
+    <link rel="stylesheet" href="./style1.css">
+    <script src="https://kit.fontawesome.com/d65e853b8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main" id="backBlur">
+    <div class="row-1">
+        <p class="head-b1">Tasks <span class="head-t">List</span></p>
+        <p class="button1" onclick="todoSwitch()"><i class="fa fa-plus-circle"></i><span class="add1">Add Item</span></p>
+    </div>
+    <div class="row-1-list"></div>
+    <div id="noItem">No Items in the todo list</div>
+    </div>
+    <!-- <div class="row-1">
+        <p class="returnBack" onclick="returnTodo()"><i class="fa fa-chevron-circle-left"></i> Back</p>
+        <p class="button1" onclick="todoSwitch()"><i class="fa fa-plus-circle"></i></p>
+    </div> -->
+    <ul id="tabSingle" style="list-style-type:none;"></ul>
+    <div class="Tab2">
+        <button class="button2" onclick="deleteTodo(this)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+        <p class="button3" onclick="addSwitch(this)"><i class="fa fa-plus-circle"></i></p>
+    </div>
+    <!-- <div class="newList text1" id="pop1">
+        <div>
+            <p class="text2">Add New List</p>
+        </div>
+        <div>
+            <input type="text" id="head1" placeholder="Add New List">
+        </div>
+        <div>
+            <button onclick="addTodo()">Add</button>
+            <button onclick="todoSwitch()">Close</button>
+        </div>
+    </div> -->
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="tooglePopup()">&times;</div>
+            <h1>title</h1>
+        </div>
+    </div>
+    <button onclick="togglePopup()">showpopup</button>
+    <script src="./main1.js" type="text/javascript"></script>
+</body>
+</html>
